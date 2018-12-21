@@ -1,3 +1,10 @@
+/*
+我的代码并无特别出彩之处，但基本的要求都会做到，努力在修改的同时提高可读性。
+每行代码做到简洁，如果有详细的代码规范，我也能学习和遵守将其带入我的代码中。
+我认为代码可读性不是一蹴而就的，实在不断维护中提高的。
+在维护代码的同时，我将我的构建思路写进了文档中，提供给以后的开发者参考。
+*/
+
 #include <tpcc_helper.h>
 #include <algorithm>
 #include "global.h"
@@ -266,7 +273,7 @@ RC DORAThread::new_run(){
 
                     //TODO: timing
                     //DEBUG_DORA("Payment_0_rvp_counter = %d %ld %d \n", txn_man->Payment_0_rvp_counter, my_action->txn_id, action_table.active_cnt);
-                    
+
                     uint64_t dora_action_wait_starttime_D = get_sys_clock();
 
                     if(txn_man->Payment_0_rvp_counter.load() == 3){
@@ -296,7 +303,7 @@ RC DORAThread::new_run(){
 
                     //TODO: timing
                     //DEBUG_DORA("Payment_0_rvp_counter = %d %ld %d \n", txn_man->Payment_0_rvp_counter, my_action->txn_id, action_table.active_cnt);
-                    
+
                     uint64_t dora_action_wait_starttime_C = get_sys_clock();
 
                     if(txn_man->Payment_0_rvp_counter.load() == 3){
